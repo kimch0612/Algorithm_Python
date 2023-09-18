@@ -8,6 +8,6 @@ def del_data(location):
     while True:
         try: del(friends[location])
         except: break
+    return friends
 
-del_data(0)
-print(friends)
+print(del_data(2))
