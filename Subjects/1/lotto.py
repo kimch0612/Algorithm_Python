@@ -28,7 +28,7 @@ def addLottoNum(num): # 로또 번호를 Linked List에 추가하는 함수를 �
         head = node # 새로운 노드를 head로 지정하고, 기존의 head와 연결.
         return
     current = head
-    while current.link != head:
+    while current.link != head and current.link != None:
         pre = current
         current = current.link
         if current.data > num:
