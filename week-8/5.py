@@ -1,11 +1,22 @@
 def isQueueFull():
     global SIZE, queue, front, rear
-    if (rear == SIZE): return True
+    if (rear == SIZE - 1): return True
     else: return False
 
-SIZE = 5
-queue = ["1", "2", "3", "4", "5"]
-front = -1
-rear = len(queue)
+def enQueue(data):
+    global SIZE, queue, front, rear
+    if (isQueueFull()):
+        print("큐가 가득 찼습니다.")
+        return
+    rear += 1
+    queue[rear] = data
 
-print("queue가 꽉 찼나? --> ", isQueueFull())
+SIZE = 5
+queue = ["화사", "솔라", "문별", "휘인", None]
+front = -1
+rear = 3
+
+print(queue)
+enQueue("선미")
+print(queue)
+enQueue("재남")
