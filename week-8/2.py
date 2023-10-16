@@ -12,3 +12,8 @@ print("---- 큐 상태 ----")
 print("[출구] <--", end=' ')
 for i in range(0, len(queue)): print(queue[i], end=' ')
 print("<-- [입구]")
+
+front += 1
+data = queue[front]
+queue[front] = None
+print('deQueue --> ', data)
