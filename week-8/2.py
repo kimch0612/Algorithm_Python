@@ -16,4 +16,10 @@ print("<-- [입구]")
 front += 1
 data = queue[front]
 queue[front] = None
-print('deQueue --> ', data)
+print('deQueue --> ', data, end=' ')
+print("\n")
+
+print("---- 큐 상태 ----")
+print("[출구] <-- ", end = ' ')
+for i in range(0, len(queue), 1): print(queue[i], end=' ')
+print("<-- [입구]")
