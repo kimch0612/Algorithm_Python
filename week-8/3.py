@@ -1,3 +1,8 @@
+def isQueueFull():
+    global SIZE, queue, front, rear
+    if (rear == SIZE - 1): return True
+    else: return False
+
 SIZE = 5
 queue = [None for _ in range(SIZE)]
 front = rear = -1
