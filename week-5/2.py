@@ -13,7 +13,7 @@ def printNodes(start):
         print(current.data, end=' ')
     print()
 
-def insert_node(findData, insertData):
+def insertNode(findData, insertData):
     global memory, head, current, pre
 
     if head.data == findData:
