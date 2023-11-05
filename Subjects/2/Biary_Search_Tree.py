@@ -92,7 +92,7 @@ for data in data_list:
     bst.insert(data)
 
 # 검색할 키 정의
-search_key = 40
+search_key = 24
 
 # 키를 찾았는지 여부 확인
 if bst.find(search_key):
@@ -101,8 +101,7 @@ else:
     print(f"{search_key}을(를) 찾지 못했습니다.")
 
 # 삭제할 키 정의
-delete_key = 0
-
+delete_key = 3
 # 키를 삭제했는지 여부 확인
 if bst.delete(delete_key):
     print(f"{delete_key}을(를) 삭제했습니다.")
@@ -110,12 +109,12 @@ else:
     print(f"{delete_key}을(를) 삭제하지 못했습니다.")
 
 # 다른 키에 대해서도 삭제를 시도
-delete_key = 1
+delete_key = 4
 if bst.delete(delete_key):
     print(f"{delete_key}을(를) 삭제했습니다.")
 else:
     print(f"{delete_key}을(를) 삭제하지 못했습니다.")
-delete_key = 2
+delete_key = 5
 if bst.delete(delete_key):
     print(f"{delete_key}을(를) 삭제했습니다.")
 else:
