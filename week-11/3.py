@@ -1,15 +1,3 @@
-
-# print(' ', end=' ')
-# for v in range(G1.SIZE):
-#     print(nameAry[v], end=' ')
-# print()
-# for row in rnage(G1.SIZE):
-#     print(nameAry[row], end=' ')
-#     for col in range(G1.SZIE):
-#         print(G1.graph[row][col], end=' ')
-#     print()
-# print()
-
 class Graph():
     def __init__ (self, size):
         self.SIZE = size
