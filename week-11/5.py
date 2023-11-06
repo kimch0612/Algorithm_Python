@@ -1,4 +1,4 @@
-#Code09-03
+#Self Study 9-2
 class Graph():
     def __init__ (self, size):
         self.SIZE = size
