@@ -1,7 +1,5 @@
 def calNum(a, b):
     if a >= b: return a
     else: return a + calNum(a+1, b)
-
-a = int(input("숫자1 ---> "))
-b = int(input("숫자2 ---> "))
+a, b = map(int, input("숫자 1과 2를 차례대로 입력하세요: ").split())
 print(calNum(a, b))
